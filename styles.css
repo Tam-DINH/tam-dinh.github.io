@@ -15,6 +15,7 @@ body {
   color: #555555;
 }
 
+
 .bold {
   font-weight: 700;
   font-size: 20px;
@@ -35,7 +36,7 @@ body {
 
 .resume .resume_left {
   width: 280px;
-  background: #0bb5f4;
+  background: #126280;
 }
 
 .resume .resume_left .resume_profile {
