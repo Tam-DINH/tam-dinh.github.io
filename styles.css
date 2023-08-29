@@ -40,8 +40,13 @@ body {
 }
 
 .resume .resume_left .resume_profile {
-  width: 100%;
-  height: 280px;
+  width: 75%;
+}
+
+.profil-picture {
+  /* width: 70%; */
+  border: solid 1px;
+  border-radius: 50% 50%;
 }
 
 .resume .resume_left .resume_profile img {
@@ -165,10 +170,9 @@ body {
   position: relative;
 }
 
-.resume .resume_right ul li .date {
+.resume .resume_right ul li .title-h3 {
   font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .resume .resume_right ul li .info {
@@ -232,4 +236,9 @@ body {
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
+}
+
+.location {
+  font-style: italic;
+  font-size: 0.8em;
 }
