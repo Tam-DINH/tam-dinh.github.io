@@ -245,3 +245,8 @@ body {
   font-style: italic;
   font-size: 0.8em;
 }
+
+.social-link {
+  color: white;
+  text-decoration: none;
+}
