@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.querySelector('.overlay');
   const popupButtons = document.querySelectorAll('.popup-button');
 
+  let isMenuOpen = false; // Variable to track menu state
+
   // Function to update the text of the menu button
   function updateMenuButtonText(activePageName) {
     activePageText.textContent = activePageName;
@@ -42,6 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
   menuBtn.addEventListener("click", () => {
     navList.classList.toggle("active");
     $("#content-wrapper").toggleClass("menu-open"); // Toggle the menu-open class using jQuery
+    
+    // Toggle menu state
+    isMenuOpen = !isMenuOpen;
+
+    // Close the menu on smaller screens when clicking outside
+    if (!isMenuOpen) {
+      overlay.style.display = 'none';
+    }
   });
 
   // Event listener for navigation links
@@ -52,7 +62,11 @@ document.addEventListener("DOMContentLoaded", function () {
       showPage(targetId);
       updateMenuButtonText(link.textContent);
       updatePageTitleAndURL(link.textContent);
-      navList.classList.remove("active");
+      
+      // Close the menu on smaller screens
+      if (isMenuOpen) {
+        menuBtn.click(); // Simulate a click on the menu button to close it
+      }
     });
   });
 
@@ -92,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (windowWidth >= desktopBreakpoint) {
       $contentWrapper.removeClass("menu-open");
       $contentWrapper.css("margin-top", "0");
+      isMenuOpen = false; // Ensure menu state is closed on resize to desktop view
     }
   });
 });
