@@ -2,7 +2,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Apple Chancery', cursive;
+  font-family: 'Arial Narrow', sans-serif;
   background: url('./images/background-forest.jpg') no-repeat center center fixed;
   background-size: cover;
   background-color: #f5f5f5;
@@ -19,7 +19,7 @@ header {
 
 #content-wrapper.menu-open {
   transition: margin-top 0.2s ease;
-  margin-top: 1em;
+  margin-top: 10em;
 }
 
 /* Media query for desktop screens */
@@ -27,6 +27,10 @@ header {
   #content-wrapper.menu-open {
     margin-top: 0;
   }
+}
+
+.text-intro {
+  font-size: 3vw;
 }
 
 .menu-btn {
@@ -93,6 +97,16 @@ nav ul li a:hover {
   color: darkslategray;
   animation-name: bounce;
   animation-timing-function: ease;
+}
+
+/* HOME */
+.home-h2 {
+  margin-top: 2em;
+}
+
+.home-separator {
+  border-bottom: solid darkslategrey;
+  padding-bottom: 0.5em;
 }
 
 /* Section styles */
@@ -250,17 +264,17 @@ nav ul li a:hover {
   padding: 0.2em;
 }
 
-.text-intro {
-  font-size: 2em;
+.experience li {
+  font-size: 1.3vw;
 }
 
-.home-h2 {
-  margin-top: 2em;
-}
-
-.home-separator {
-  border-bottom: solid darkslategrey;
-  padding-bottom: 0.5em;
+@media screen and (max-width: 768px) {
+  /* Reduce font size for experience li elements on smaller screens */
+  .experience li {
+    font-size: 1.2vw;
+    text-align: left;
+    margin: auto;
+  }
 }
 
 /* Rotate animation for React icon */
@@ -275,7 +289,7 @@ nav ul li a:hover {
 
 /* Apply the animation to the element */
 .react-icon {
-  max-width: 3%;
+  max-width: 2.6vw;
   animation: rotate 5s linear infinite;
   padding-left: 4px;
   padding-right: 4px;
@@ -307,6 +321,14 @@ li {
   margin-bottom: 0.3em;
 }
 
+@media screen and (max-width: 768px) {
+  /* Reduce font size for experience li elements on smaller screens */
+  .evaschool-functions {
+    font-size: 1.2vw;
+    padding: 1.2em;
+  }
+}
+
 /* Soleil section styles */
 .soleil-title {
   font-size: 2.3vw;
@@ -321,6 +343,14 @@ li {
 .soleil-ul {
   list-style: none;
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  /* Reduce font size for experience li elements on smaller screens */
+  .soleil-manage {
+    font-size: 1.2vw;
+    padding: 1.2em;
+  }
 }
 
 /* Style for list items */
@@ -344,6 +374,14 @@ li {
   text-align: left;
 }
 
+@media screen and (max-width: 768px) {
+  /* Reduce font size for experience li elements on smaller screens */
+  .studio-manage {
+    font-size: 1.2vw;
+    padding: 1.2em;
+  }
+}
+
 /* Style for list items */
 .studio-ul li {
   margin-bottom: 0.3em;
@@ -357,8 +395,8 @@ li {
 }
 
 .skills-logo img {
-  max-width: 4em;
-  max-height: 4em;
+  max-width: 8vw;
+  max-height: 4vw;
   padding: 1.2em;
   margin-top: 2em;
 }
@@ -432,7 +470,7 @@ li {
 
 .popup-content p {
   color: #28292b;
-  font-size: 1.2em;
+  font-size: 1.3vw;
 }
 
 /* Close button styles */

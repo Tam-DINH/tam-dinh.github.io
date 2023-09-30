@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener for the menu burger
   menuBtn.addEventListener("click", () => {
     navList.classList.toggle("active");
+    $("#content-wrapper").toggleClass("menu-open"); // Toggle the menu-open class using jQuery
   });
 
   // Event listener for navigation links
@@ -91,23 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (windowWidth >= desktopBreakpoint) {
       $contentWrapper.removeClass("menu-open");
       $contentWrapper.css("margin-top", "0");
-    }
-  });
-
-  // Event listener for resume download with permission request
-  const resumeImage = document.querySelector("#resume-link img");
-  resumeImage.addEventListener("click", function (event) {
-    event.preventDefault();
-    if (confirm("Do you want to download the resume?")) {
-      const resumeLink = document.getElementById("resume-link");
-      const resumeHref = resumeLink.getAttribute("href");
-      const a = document.createElement("a");
-      a.href = resumeHref;
-      a.setAttribute("download", "Tam DINH - CV.pdf");
-      a.style.display = "none";
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
     }
   });
 });
