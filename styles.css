@@ -4,6 +4,7 @@ body, html {
   padding: 0;
   font-family: 'Arial Narrow', sans-serif;
   background: url('./images/background-forest.jpg') no-repeat center center fixed;
+  background-attachment: fixed;
   background-size: cover;
   background-color: #f5f5f5;
 }
