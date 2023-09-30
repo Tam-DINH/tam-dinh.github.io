@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>Tam DINH - Portfolio</title>
 </head>
-<body>
+<body id="main-body">
     <header>
         <div class="navbar">
           <button class="menu-btn">&#9776; <span id="active-page">Accueil</span></button>
@@ -20,71 +20,251 @@
                       <a href="#home">Home</a>
                     </li>
                     <li>
-                      <a href="#about">About me </a>
-                    </li>
-                    <li>
                       <a href="#experiences">Experiences</a>
                     </li>
                     <li>
-                      <a href="#contact">Contact me </a>
+                      <a href="#skills">Skills and knowledge </a>
+                    </li>
+                    <li>
+                      <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     
+    <div id="content-wrapper">
     <section id="home" class="page">
         <div class="container">
             <h1 class="home-title">Welcome to my portfolio </h1>
-            <span class="text-intro"> "Do you even <img class="react-icon" src="./images/React-icon.png" /> bro ?" </span>
+            <span class="text-intro"> " Do you even <img class="react-icon" src="./images/React-icon.png" />  bro' ? " </span>
             <div class="home-separator"> </div>
             <h2 class="home-h2"> React Web Developer </h2>
             <p>I am a Web Developer seeking for a first experience in a company that could help me hone my skills. </p>
-            <p> Here, you will find everything to know about me, my experiences, my projects. </p>
            
         </div>
     </section>
 
-<section id="about" class="page">
+<!-- <section id="about" class="page">
   <div class="container">
       <h1>About me</h1>
       <img src="./images/photo-profil-removebg-preview.png" alt="Description de l'image" class="about-image off-screen">
-      <p>Bienvenue sur ma page personnelle. Je suis...</p>
+      <p>I am a Web Developer seeking for a first experience in a company that could help me hone my skills. </p>
+      <p> Here, you will find everything to know about me, my experiences, my projects. </p>
   </div>
-</section>
+</section> -->
 
 <section id="experiences" class="page">
   <div class="container">
     <h1>Experiences</h1>
     
     <div class="experience">
-      <h3>Expérience 1</h3>
-      <p>Date : [date de l'expérience]</p>
-      <p>Description : [description de l'expérience]</p>
+      <h3 class="evalschool-title">"Evalschool"</h3>
+
+      <button class="popup-button">Details</button>
+      <div class="popup-content">
+        <p>Initially, Evaschool was a school project where a team of six sutdents, three Symfony developers and three React developers combined their knowledge to create this. We had one month to give at least a MVP. The project is still ongoing with the team.</p>
+        <button class="close-popup">Close</button>
+      </div>
+
+      <p class="evalschool-p"> Co-founder / Front Web Developer </p>
+      <p class="evalschool-p"> Nice, FRANCE | In progress - the project began on 07/23 </p>
+        <ul class="evalschool-ul">
+          <li>
+            Dynamization using React
+          </li>
+          <li>
+            Creation of the following features :
+            <ul class="evaschool-functions">
+              <li>Login system </li>
+              <li>Connection page </li>
+              <li>User's account creation </li>
+              <li>User's profil page </li>
+            </ul>
+          </li>
+          <li>
+            Securing web applications : XSS attacks, CSRF
+          </li>
+          <li>
+            Wireframes and mockups
+          </li>
+          <li>
+            User requirements
+          </li>
+        </ul>
     </div>
     
     <div class="experience">
-      <h3>Expérience 2</h3>
-      <p>Date : [date de l'expérience]</p>
-      <p>Description : [description de l'expérience]</p>
+      <h3 class="soleil-title">Restaurant "Le Soleil d'Asie"</h3>
+
+      <button class="popup-button">Details</button>
+      <div class="popup-content">
+        <p>This was a family business with my mom and I, where people could find very traditionnal Vietnamese food. We opened in 2016. </p>
+        <button class="close-popup">Close</button>
+      </div>
+
+      <p class="soleil-p">Partner - Manager</p>
+      <p class="soleil-p"> Nice, FRANCE | 2008 - 2011 & 11/2006 - 11/2022 </p>
+      <ul class="soleil-ul">
+        <li>
+          Management : 
+        </li>
+          <ul class="soleil-manage">
+            <li> Stocks
+            </li> 
+            <li> Administration
+            </li> 
+            <li>Suppliers
+            </li>
+            <li> Clients
+            </li>
+            <li> Cashing
+            </li>
+            <li> Social media and 
+            </li>
+            <li> Online communications 
+            </li>
+          </ul>
+        <li>
+          Search, recruit, staff training
+        </li>
+      </ul>
+
     </div>
+
+    <div class="experience">
+      <h3 class="studio-title">"The English Studio"</h3>
+
+      <button class="popup-button">Details</button>
+      <div class="popup-content">
+        <p>One of my most exciting experience. Being in a different country, speaking English the whole time ! I really was able to hone my English skills there. </p>
+        <button class="close-popup">Close</button>
+      </div>
+
+      <p class="studio-p">Trainee : Assistant to the Manager</p>
+      <p class="studio-p"> London, United Kingdom | 01/2015 - 02/2015 </p>
+      <ul class="studio-ul">
+        <li>
+          Clients : 
+        </li>
+          <ul class="soleil-manage">
+            <li> Accomodate
+            </li> 
+            <li> Inform about available school's services
+            </li> 
+          </ul>
+        <li>
+          Management of students' profils using the internal software
+        </li>
+        <li>
+          Translation of the internal magazine from English to French
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" class="page">
+  <div class="container container-skills">
+      <div class="coordinates-container"> 
+        <h1>Skills and knowledge</h1>
+          <div class="skills-logo">
+            <div class="skills-logo-top">
+
+              <div class="tooltip-container">
+                <img src="./images/htlm-logo.png" alt="HTML Logo" class="about-image off-screen">
+                <div class="tooltip-content">HTML</div>
+              </div>
+
+
+              <div class="tooltip-container">
+                <img src="./images/css-logo.png" alt="CSS Logo" class="about-image off-screen">
+                <div class="tooltip-content">CSS</div>
+              </div>
+
+              <div class="tooltip-container">
+                <img src="./images/React-icon.png" alt="React Logo" class="about-image off-screen">
+                <div class="tooltip-content">React.js &#10084; </div>
+              </div>
+              
+              <div class="tooltip-container">
+               <img src="./images/ts-logo.png" alt="TS Logo" class="about-image off-screen">
+               <div class="tooltip-content">TypeScript</div>
+              </div>
+
+              <div class="tooltip-container">
+                <img src="./images/laravel-logo.png" alt="Laravel Logo" class="about-image off-screen">
+                <div class="tooltip-content">Laravel : some notions</div>
+              </div>
+
+            </div>
+
+            <div class="skills-logo-bottom">
+              <div class="tooltip-container">
+                <img src="./images/github-logo.png" alt="Github Logo" class="about-image off-screen">
+                <div class="tooltip-content">Github</div>
+              </div>
+
+              <div class="tooltip-container">
+                <img src="./images/figma-logo.svg" alt="Figma Logo" class="about-image off-screen">
+                <div class="tooltip-content">Figma for wireframe and mockups.</div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="projects" class="page">
+  <div class="container">
+    <h1>Projects</h1>
+    <p>This section is currently a work in progress. Check back later for updates!</p>
   </div>
 </section>
 
 <section id="contact" class="page">
   <div class="container-contact">
-        <div class="coordinates-container"> 
-        <h1>Coordinates</h1>
-        <p> Tam DINH </p>
-        <p> +33 6 99 47 34 52 </p>
-    </div>
-    <div class="contact-container">
-      <h1>Contact me</h1>
-      <p>Vous pouvez me contacter à l'adresse...</p>
+    <div class="container-contact-left">
+    <h1>Coordinates</h1>
+      <p> Tam DINH </p>
+      <p> Nice </p>
+      <p> FRANCE </p>
+
+    <h1>Contact me</h1>
+      <p>+33 6 99 47 34 52</p>
+      <p>t.dinh.nice@gmail.com</p>
   </div>
+
+    <div class="container-contact-right">
+      <h1>Networks</h1>
+      <div class="networks-logo">
+        <div class="networks-logo-top">
+          <a href="https://github.com/Tam-DINH" target="_blank">
+            <img src="./images/github-logo.png" alt="Github Logo">
+          </a>
+
+          <a href="https://www.linkedin.com/in/tam-dinh-reactdev/" target="_blank">
+            <img src="./images/linkedin-logo.png" alt="Link to my Linkedin">
+          </a>
+      </div>
+
+        <div class="networks-logo-bottom">
+          <a href="./images/Tam DINH - CV.pdf" id="resume-link" download>
+            <img src="./images/resume-logo.png" alt="Tam DINH resume">
+          </a>
+        </div>
+        <p id="download-p"> &#9757;Click on the image above to download my resume&#9757; </p>
+      </div>
+    </div>
     </div>
 </section>
 
+    </div>
 <script src="script.js"></script>
 </body>
 </html>
