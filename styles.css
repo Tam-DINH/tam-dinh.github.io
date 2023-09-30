@@ -85,6 +85,12 @@ header {
   padding-bottom: 0.5em;
 }
 
+.react-icon {
+  max-width: 2.6vw;
+  animation: rotate 5s linear infinite;
+  padding-left: 4px;
+  padding-right: 4px;
+}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -106,6 +112,11 @@ header {
   .container p {
     font-size: 4vw;
   }
+
+  .react-icon {
+    max-width: 4vw;
+  }
+
 }
 
 /* NAVBAR SECTION */
@@ -248,14 +259,6 @@ nav ul li a:hover {
   to {
     transform: rotate(360deg);
   }
-}
-
-/* Apply the animation to the element */
-.react-icon {
-  max-width: 2.6vw;
-  animation: rotate 5s linear infinite;
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 /* Evalschool section styles */
