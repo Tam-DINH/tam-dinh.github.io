@@ -19,7 +19,7 @@ header {
 
 #content-wrapper.menu-open {
   transition: margin-top 0.2s ease;
-  margin-top: 10em;
+  margin-top: 11.5em;
 }
 
 /* Media query for desktop screens */
@@ -87,6 +87,10 @@ header {
 
 
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 70%;
+  }
+
   .container h1 {
     font-size: 7vw;
   }
@@ -100,7 +104,7 @@ header {
   }
 
   .container p {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 
@@ -232,6 +236,7 @@ nav ul li a:hover {
     font-size: 2.9vw;
     text-align: left;
     margin: auto;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -291,7 +296,8 @@ li {
 
   .evaschool-functions {
     font-size: 2.9vw;
-    padding: 1.2em;
+    padding-left: 1.4em;
+    padding-bottom: 0.5em;
   }
 }
 
@@ -319,7 +325,8 @@ li {
 
   .soleil-manage {
     font-size: 2.9vw;
-    padding: 1.2em;
+    padding-left: 1.4em;
+    padding-bottom: 0.5em;
   }
 }
 
@@ -344,6 +351,10 @@ li {
   text-align: left;
 }
 
+.studio-ul li {
+  margin-bottom: 0.3em;
+}
+
 @media screen and (max-width: 768px) {
   .studio-title {
     font-size: 7vw;
@@ -352,14 +363,17 @@ li {
 
   .studio-manage {
     font-size: 2.9vw;
-    padding: 1.2em;
+    padding-left: 1.4em;
+    padding-bottom: 0.5em;
   }
+
+  .studio-ul li {
+    margin-bottom: 0.4em;
+  }
+
 }
 
-/* Style for list items */
-.studio-ul li {
-  margin-bottom: 0.3em;
-}
+
 
 /* Skills and knowledge section styles */
 .skills-logo {
