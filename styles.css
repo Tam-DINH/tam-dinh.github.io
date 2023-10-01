@@ -483,6 +483,13 @@ li {
   }
 }
 
+@media screen and (min-width: 1913px) {
+  .networks-logo-bottom-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* TOOLTIP*/
 .tooltip-container {
   position: relative;
