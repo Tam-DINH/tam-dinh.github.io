@@ -75,11 +75,10 @@ header {
 
 .container .home-h2 {
   font-size: 2.2vw;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
-.home-h2 {
-  margin-top: 2em;
-}
 
 .home-separator {
   border-bottom: solid darkslategrey;
@@ -104,6 +103,8 @@ header {
 
   .container .home-h2 {
     font-size: 4vw;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
   }
 
   .text-intro {
@@ -111,7 +112,7 @@ header {
   }
 
   .container p {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .react-icon {
@@ -290,7 +291,7 @@ li {
 
 @media screen and (max-width: 768px) {
   .evalschool-title {
-    font-size: 5vw;
+    font-size: 6vw;
     margin-bottom: 0;
   }
 
@@ -323,7 +324,7 @@ li {
 
 @media screen and (max-width: 768px) {
   .soleil-title {
-    font-size: 7vw;
+    font-size: 6vw;
     margin-bottom: 0;
   }
 
@@ -361,7 +362,7 @@ li {
 
 @media screen and (max-width: 768px) {
   .studio-title {
-    font-size: 7vw;
+    font-size: 6vw;
     margin-bottom: 0;
   }
 
