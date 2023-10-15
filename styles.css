@@ -590,3 +590,8 @@ li {
     font-size: 3.5vw;
   }
 }
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
